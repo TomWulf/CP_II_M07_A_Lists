@@ -18,6 +18,7 @@ public class Main
         System.out.println("Here are the Turtles: "+ turtles);
         System.out.println("The first is: " + turtles.getFirst());
         System.out.println("The last is: " + turtles.getLast());
+        System.out.println("The size of the Turtle list is " + turtles.size());
 
         // remove Splinter who is not a turtle
         turtles.removeFirst();
@@ -25,7 +26,10 @@ public class Main
 
         // add Splinter back
         turtles.addFirst("Splinter");
+        // put  (insert) April into the middle...
+        turtles.add(3,"April");
         System.out.println("Here is the entire team: "+ turtles);
+
 
         // basic iteration with for each this is read only so you can't change list
         for(String elem:turtles)
@@ -40,6 +44,7 @@ public class Main
         {
             System.out.println(turtleator.next());
         }
+        System.out.println("I like Turtles...");
         turtles.set(0,"Tom");
 
         System.out.println(turtles);
